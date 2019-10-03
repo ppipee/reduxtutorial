@@ -1,17 +1,14 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
 import './display.scss'
 class Display extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            messages: [
-                "msg1",
-                "msg2",
-                "msg3",
-            ]
+            msg: []
         }
     }
-    genBox = () => this.state.messages.map(msg => <div className="msg">{msg}</div>)
+    genBox = () => this.props.messages_reducer.messages.map(msg => <div className="msg">{msg}</div>)
 
     render() {
         return (
@@ -21,4 +18,11 @@ class Display extends Component {
         )
     }
 }
-export default Display
+
+const mapStatetoProps = state => {
+    return {
+        messages_reducer: state.MessagesReducer,
+    }
+}
+
+export default connect(mapStatetoProps, null)(Display)

@@ -1,11 +1,7 @@
 import ActionsName from '../action.js'
 
 const initialState = {
-    messages: [
-        "msg1",
-        "msg2",
-        "msg3",
-    ],
+    messages: [],
 }
 
 const MessagesReducer = (state = initialState, action) => {
