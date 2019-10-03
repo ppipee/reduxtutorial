@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Note from './Input'
+import Input from './Input'
 import Display from './Display'
 
 class App extends Component {
@@ -7,9 +7,8 @@ class App extends Component {
     return (
       <>
         <Display />
-        <Note />
+        <Input />
       </>
-
     )
   }
 }

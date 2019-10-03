@@ -1,9 +1,8 @@
 .input {
-    display: flex;
-    justify-content: center;
-}
-
-.input input {
+  display: flex;
+  justify-content: center;
+  input {
     margin: auto;
-    width: 200px;
+    width: 300px;
+  }
 }

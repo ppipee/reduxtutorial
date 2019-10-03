@@ -8,15 +8,27 @@ class Input extends Component {
         }
     }
 
-    handleInput = (e) => {
-        let value = e.target.value
+    handleInput = (event) => {
+        let value = event.target.value
         this.setState({ value })
     }
+
+    save = (event) => {
+        let value = event.target.value
+        if (value !== '' && event.charCode === 13) {
+            console.log(value)
+        }
+    }
+
 
     render() {
         return (
             <div className="input">
-                <input onChange={this.handleInput} value={this.state.value} />
+                <input
+                    value={this.state.value}
+                    onChange={this.handleInput}
+                    onKeyPress={this.save}
+                />
             </div>
         )
     }
