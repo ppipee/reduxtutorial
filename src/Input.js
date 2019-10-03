@@ -1,12 +1,22 @@
 import React, { Component } from 'react'
+import './input.css'
 class Input extends Component {
     constructor(props) {
         super(props)
-        this.state = {}
+        this.state = {
+            value: ""
+        }
     }
+
+    handleInput = (e) => {
+        let value = e.target.value
+        this.setState({ value })
+    }
+
     render() {
         return (
-            <div>
+            <div className="input">
+                <input onChange={this.handleInput} value={this.state.value} />
             </div>
         )
     }

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Title } from './style'
 import Note from './Input'
 import Display from './Display'
 
