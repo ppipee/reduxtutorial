@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
 import { Title } from './style'
+import Note from './Input'
+import Display from './Display'
+
 class App extends Component {
   render() {
     return (
-      <Title>
-        Hello World
-      </Title>
+      <>
+        <Display />
+        <Note />
+      </>
+
     )
   }
 }

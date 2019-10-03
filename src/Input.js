@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import { Title } from './style'
-class Display extends Component {
+class Input extends Component {
     constructor(props) {
         super(props)
         this.state = {}
@@ -8,9 +7,8 @@ class Display extends Component {
     render() {
         return (
             <div>
-                <Title>Hello World</Title>
             </div>
         )
     }
 }
-export default Display
+export default Input
