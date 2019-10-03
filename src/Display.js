@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
+import './display.scss'
 import { Title } from './style'
+
 class Display extends Component {
     constructor(props) {
         super(props)
